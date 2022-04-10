@@ -1,0 +1,173 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "16_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0
+                },
+                "1_255": {
+                    "adv_acc": 75.65,
+                    "rob_inacc": 2.03,
+                    "robind_commit_prec": 97.39,
+                    "robind_commit_rate": 77.68
+                },
+                "2_255": {
+                    "adv_acc": 44.69,
+                    "rob_inacc": 0.49,
+                    "robind_commit_prec": 98.92,
+                    "robind_commit_rate": 45.18
+                },
+                "4_255": {
+                    "adv_acc": 8.76,
+                    "rob_inacc": 0.03,
+                    "robind_commit_prec": 99.66,
+                    "robind_commit_rate": 8.79
+                },
+                "8_255": {
+                    "adv_acc": 0.26,
+                    "rob_inacc": 0.0
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "sbb_l",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 91.37,
+        "top5": 100.0
+    },
+    "per_class": {
+        "adv_acc": {
+            "Linf": {
+                "apgd": {
+                    "16_255": {
+                        "joint": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "nodefect": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "squat": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "surface_defect": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "welding": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        }
+                    },
+                    "1_255": {
+                        "joint": {
+                            "adv_acc": 88.46,
+                            "rob_inacc": 4.81
+                        },
+                        "nodefect": {
+                            "adv_acc": 82.71,
+                            "rob_inacc": 0.81
+                        },
+                        "squat": {
+                            "adv_acc": 24.63,
+                            "rob_inacc": 10.45
+                        },
+                        "surface_defect": {
+                            "adv_acc": 71.79,
+                            "rob_inacc": 2.25
+                        },
+                        "welding": {
+                            "adv_acc": 77.41,
+                            "rob_inacc": 2.22
+                        }
+                    },
+                    "2_255": {
+                        "joint": {
+                            "adv_acc": 80.77,
+                            "rob_inacc": 1.92
+                        },
+                        "nodefect": {
+                            "adv_acc": 43.98,
+                            "rob_inacc": 0.15
+                        },
+                        "squat": {
+                            "adv_acc": 8.21,
+                            "rob_inacc": 1.49
+                        },
+                        "surface_defect": {
+                            "adv_acc": 45.58,
+                            "rob_inacc": 0.58
+                        },
+                        "welding": {
+                            "adv_acc": 48.52,
+                            "rob_inacc": 0.74
+                        }
+                    },
+                    "4_255": {
+                        "joint": {
+                            "adv_acc": 46.15,
+                            "rob_inacc": 0.0
+                        },
+                        "nodefect": {
+                            "adv_acc": 5.54,
+                            "rob_inacc": 0.0
+                        },
+                        "squat": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "surface_defect": {
+                            "adv_acc": 11.19,
+                            "rob_inacc": 0.08
+                        },
+                        "welding": {
+                            "adv_acc": 4.07,
+                            "rob_inacc": 0.0
+                        }
+                    },
+                    "8_255": {
+                        "joint": {
+                            "adv_acc": 4.81,
+                            "rob_inacc": 0.0
+                        },
+                        "nodefect": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "squat": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        },
+                        "surface_defect": {
+                            "adv_acc": 0.25,
+                            "rob_inacc": 0.0
+                        },
+                        "welding": {
+                            "adv_acc": 0.0,
+                            "rob_inacc": 0.0
+                        }
+                    }
+                }
+            }
+        },
+        "nat_acc": {
+            "joint": 90.38,
+            "nodefect": 96.9,
+            "squat": 76.87,
+            "surface_defect": 87.56,
+            "welding": 88.15
+        }
+    }
+}

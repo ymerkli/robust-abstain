@@ -1,0 +1,80 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "2_255": {
+                    "adv_acc": 10.35,
+                    "rob_inacc": 0.05,
+                    "robind_commit_prec": 99.52,
+                    "robind_commit_rate": 10.4
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "2_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/2_255/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210802_0650/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255.pt",
+                        "comp_adv_acc": 53.54,
+                        "comp_nat_acc": 78.21,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/2_255/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210802_0650/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255.pt",
+                        "comp_adv_acc": 11.25,
+                        "comp_nat_acc": 80.21,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "2_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/2_255/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210802_0650/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255.pt",
+                        "comp_adv_acc": 53.54,
+                        "comp_nat_acc": 78.21,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/2_255/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra2_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210802_0650/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra2_255.pt",
+                        "comp_adv_acc": 11.25,
+                        "comp_nat_acc": 80.21,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar100",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 71.0,
+        "top5": 91.45
+    }
+}

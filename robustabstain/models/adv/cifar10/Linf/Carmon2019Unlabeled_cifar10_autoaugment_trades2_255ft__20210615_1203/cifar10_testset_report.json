@@ -1,0 +1,116 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "2_255": {
+                    "adv_acc": 86.49,
+                    "rob_inacc": 1.34,
+                    "robind_commit_prec": 98.47,
+                    "robind_commit_rate": 87.83
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            },
+            "pgd": {
+                "2_255": {
+                    "adv_acc": 86.51,
+                    "rob_inacc": 1.25
+                },
+                "info": {
+                    "adv_attack": "pgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "2_255": {
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__Carmon2019Unlabeled_cifar10_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt",
+                        "comp_adv_acc": 89.94,
+                        "comp_nat_acc": 96.7,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_trades2_255ft__20210529_1410/Carmon2019Unlabeled_cifar10_trades2_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt",
+                        "comp_adv_acc": 86.49,
+                        "comp_nat_acc": 97.78,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "2_255": {
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__Carmon2019Unlabeled_cifar10_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt",
+                        "comp_adv_acc": 89.94,
+                        "comp_nat_acc": 96.7,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_trades2_255ft__20210529_1410/Carmon2019Unlabeled_cifar10_trades2_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt",
+                        "comp_adv_acc": 86.49,
+                        "comp_nat_acc": 97.78,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt",
+                        "comp_adv_acc": 86.52,
+                        "comp_nat_acc": 97.33,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "pgd": {
+            "2_255": {
+                "comp_Carmon2019Unlabeled_cifar10_autoaugment_trades2_255__DLA_cifar10_std": {
+                    "rob": {
+                        "branch_model": [
+                            "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt"
+                        ],
+                        "comp_adv_acc": 86.52,
+                        "comp_nat_acc": 95.78,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255ft__20210615_1203/Carmon2019Unlabeled_cifar10_autoaugment_trades2_255.pt"
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 94.24,
+        "top5": 99.84
+    }
+}

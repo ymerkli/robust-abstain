@@ -1,0 +1,80 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 32.48,
+                    "rob_inacc": 1.55,
+                    "robind_commit_prec": 95.45,
+                    "robind_commit_rate": 34.029999999999994
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "1_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/1_255/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210620_0406/Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255.pt",
+                        "comp_adv_acc": 62.97,
+                        "comp_nat_acc": 76.41,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255ft__20210609_2128/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/1_255/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210620_0406/Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255.pt",
+                        "comp_adv_acc": 36.46,
+                        "comp_nat_acc": 80.11,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "1_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/1_255/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210620_0406/Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255.pt",
+                        "comp_adv_acc": 62.97,
+                        "comp_nat_acc": 76.41,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255ft__20210609_2128/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades1_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/1_255/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra1_255__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210620_0406/Rebuffi2021Fixing_28_10_cutmix_ddpm_mra1_255.pt",
+                        "comp_adv_acc": 36.46,
+                        "comp_nat_acc": 80.11,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar100",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 69.75,
+        "top5": 90.29
+    }
+}

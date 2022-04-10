@@ -1,0 +1,98 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 82.82,
+                    "rob_inacc": 0.4,
+                    "robind_commit_prec": 99.52,
+                    "robind_commit_rate": 83.22
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "1_255": {
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__Carmon2019Unlabeled_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Carmon2019Unlabeled/mra1_255_autoaugment__Carmon2019Unlabeled__20210726_1024/Carmon2019Unlabeled_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 91.85,
+                        "comp_nat_acc": 96.17,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_trades1_255ft__20210525_1434/Carmon2019Unlabeled_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__DLA_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 83.1,
+                        "comp_nat_acc": 95.86,
+                        "trunk_model": "/home/ymerkli/thesis/robust-abstain/robustabstain/models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt"
+                    }
+                },
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Carmon2019Unlabeled/mra1_255_autoaugment__Carmon2019Unlabeled__20210726_1024/Carmon2019Unlabeled_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 82.82,
+                        "comp_nat_acc": 98.45,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "1_255": {
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__Carmon2019Unlabeled_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Carmon2019Unlabeled/mra1_255_autoaugment__Carmon2019Unlabeled__20210726_1024/Carmon2019Unlabeled_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 91.85,
+                        "comp_nat_acc": 96.17,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Carmon2019Unlabeled_cifar10_trades1_255ft__20210525_1434/Carmon2019Unlabeled_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Carmon2019Unlabeled/mra1_255_autoaugment__Carmon2019Unlabeled__20210726_1024/Carmon2019Unlabeled_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 82.82,
+                        "comp_nat_acc": 98.45,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Carmon2019Unlabeled_autoaugment_mra1_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Carmon2019Unlabeled/mra1_255_autoaugment__Carmon2019Unlabeled__20210726_1024/Carmon2019Unlabeled_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 83.05,
+                        "comp_nat_acc": 97.87,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 95.11,
+        "top5": 99.85
+    }
+}

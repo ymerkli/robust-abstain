@@ -1,0 +1,75 @@
+python train/train_revcert.py \
+    --dataset cifar10 \
+    --eval-set test \
+    --adv-norm L2 \
+    --train-eps 0.12 \
+    --test-eps 0.12 \
+    --noise-sd 0.06 \
+    --smoothing-sigma 0.06 \
+    --num-noise-vec 16 \
+    --trunk-models ./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt \
+    --branch-model ./models/augm/cifar10/resnet110_cifar10_gaussaugm0.12__20210426_1811/resnet110_cifar10_gaussaugm0.12.pt \
+    --train-batch 50 \
+    --test-batch 50  \
+    --epochs 50 \
+    --lr 0.001 \
+    --lr-sched trades \
+    --revcert-loss revcertrad \
+    --revadv-beta 0.75
+
+python train/train_revcert.py \
+    --dataset cifar10 \
+    --eval-set test \
+    --adv-norm L2 \
+    --train-eps 0.25 \
+    --test-eps 0.25 \
+    --noise-sd 0.12 \
+    --smoothing-sigma 0.12 \
+    --num-noise-vec 16 \
+    --trunk-models ./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt \
+    --branch-model ./models/augm/cifar10/resnet110_cifar10_gaussaugm0.12__20210426_1811/resnet110_cifar10_gaussaugm0.12.pt \
+    --train-batch 50 \
+    --test-batch 50  \
+    --epochs 50 \
+    --lr 0.001 \
+    --lr-sched trades \
+    --revcert-loss revcertrad \
+    --revadv-beta 0.75
+
+python train/train_revcert.py \
+    --dataset cifar10 \
+    --eval-set test \
+    --adv-norm L2 \
+    --train-eps 0.12 \
+    --test-eps 0.12 \
+    --noise-sd 0.06 \
+    --smoothing-sigma 0.06 \
+    --num-noise-vec 16 \
+    --trunk-models ./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt \
+    --branch-model ./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt \
+    --train-batch 50 \
+    --test-batch 50  \
+    --epochs 50 \
+    --lr 0.001 \
+    --lr-sched trades \
+    --revcert-loss revcertrad \
+    --revadv-beta 0.75
+
+python train/train_revcert.py \
+    --dataset cifar10 \
+    --eval-set test \
+    --adv-norm L2 \
+    --train-eps 0.25 \
+    --test-eps 0.25 \
+    --noise-sd 0.12 \
+    --smoothing-sigma 0.12 \
+    --num-noise-vec 16 \
+    --trunk-models ./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt \
+    --branch-model ./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt \
+    --train-batch 50 \
+    --test-batch 50  \
+    --epochs 50 \
+    --lr 0.001 \
+    --lr-sched trades \
+    --revcert-loss revcertrad \
+    --revadv-beta 0.75

@@ -1,0 +1,440 @@
+{
+    "adv_acc": {
+        "L2": {
+            "autoattack": {
+                "0.25": 81.1,
+                "0.50": 70.0,
+                "1.0": 36.6,
+                "1.5": 12.8,
+                "2.0": 3.4,
+                "info": {
+                    "adv_attack": "autoattack",
+                    "adv_norm": "L2",
+                    "test_att_n_steps": null,
+                    "test_att_step_size": null
+                }
+            },
+            "pgd": {
+                "0.25": 83.26,
+                "0.50": 75.27,
+                "1.0": 55.03,
+                "1.5": 36.63,
+                "2.0": 23.37,
+                "info": {
+                    "adv_attack": "pgd",
+                    "adv_norm": "L2",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.03
+                }
+            }
+        },
+        "Linf": {
+            "apgd": {
+                "16_255": {
+                    "adv_acc": 29.47,
+                    "rob_inacc": 0.12
+                },
+                "1_255": {
+                    "adv_acc": 87.48,
+                    "rob_inacc": 7.97,
+                    "robind_commit_prec": 91.65,
+                    "robind_commit_rate": 95.45
+                },
+                "2_255": {
+                    "adv_acc": 85.34,
+                    "rob_inacc": 6.35,
+                    "robind_commit_prec": 93.07,
+                    "robind_commit_rate": 91.69
+                },
+                "4_255": {
+                    "adv_acc": 79.86,
+                    "rob_inacc": 3.74,
+                    "robind_commit_prec": 95.53,
+                    "robind_commit_rate": 83.6
+                },
+                "8_255": {
+                    "adv_acc": 65.7,
+                    "rob_inacc": 1.31
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            },
+            "autoattack": {
+                "16_255": {
+                    "adv_acc": 29.19,
+                    "rob_inacc": 0.12
+                },
+                "1_255": {
+                    "adv_acc": 87.48,
+                    "rob_inacc": 7.97
+                },
+                "2_255": {
+                    "adv_acc": 85.34,
+                    "rob_inacc": 6.35
+                },
+                "4_255": {
+                    "adv_acc": 79.87,
+                    "rob_inacc": 3.74
+                },
+                "8_255": {
+                    "adv_acc": 65.65,
+                    "rob_inacc": 1.3
+                },
+                "info": {
+                    "adv_attack": "autoattack",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": null,
+                    "test_att_step_size": null
+                }
+            },
+            "pgd": {
+                "16_255": {
+                    "adv_acc": 32.15,
+                    "rob_inacc": 0.14
+                },
+                "1_255": {
+                    "adv_acc": 87.48,
+                    "rob_inacc": 7.97
+                },
+                "2_255": {
+                    "adv_acc": 85.35,
+                    "rob_inacc": 6.35
+                },
+                "4_255": {
+                    "adv_acc": 79.92,
+                    "rob_inacc": 3.74
+                },
+                "8_255": {
+                    "adv_acc": 66.01,
+                    "rob_inacc": 1.32
+                },
+                "info": {
+                    "adv_attack": "pgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "cert_acc": {
+        "0.12": {
+            "L2": {
+                "0.25": 64.1,
+                "0.5": 0.0,
+                "1.0": 0.0
+            },
+            "Linf": {
+                "16_255": 0.0,
+                "1_255": 65.0,
+                "2_255": 55.1,
+                "4_255": 0.0,
+                "8_255": 0.0
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.12"
+            }
+        },
+        "0.25": {
+            "Linf": {
+                "16_255": 0.0,
+                "1_255": 25.2,
+                "2_255": 21.0,
+                "4_255": 15.0,
+                "8_255": 0.0
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.25"
+            }
+        },
+        "Linf": {
+            "16_255": 0.0,
+            "1_255": 69.0,
+            "2_255": 64.1,
+            "4_255": 0.0,
+            "8_255": 0.0
+        }
+    },
+    "comp_acc": {
+        "": {
+            "1_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 90.32,
+                        "comp_nat_acc": 91.56,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255ft__20210524_1405/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 87.48,
+                        "comp_nat_acc": 91.81,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "2_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 89.3,
+                        "comp_nat_acc": 92.77,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades2_255ft__20210529_1409/Gowal2020Uncovering_28_10_extra_cifar10_trades2_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 85.34,
+                        "comp_nat_acc": 93.25,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "4_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades4_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 83.42,
+                        "comp_nat_acc": 95.41,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades4_255ft__20210623_2211/Gowal2020Uncovering_28_10_extra_cifar10_trades4_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 79.86,
+                        "comp_nat_acc": 95.57,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "1_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 90.32,
+                        "comp_nat_acc": 91.56,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255ft__20210524_1405/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 87.48,
+                        "comp_nat_acc": 91.81,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 87.65,
+                        "comp_nat_acc": 91.74,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "2_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 89.3,
+                        "comp_nat_acc": 92.77,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades2_255ft__20210529_1409/Gowal2020Uncovering_28_10_extra_cifar10_trades2_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 85.34,
+                        "comp_nat_acc": 93.25,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 85.36,
+                        "comp_nat_acc": 93.09,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "4_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__Gowal2020Uncovering_28_10_extra_cifar10_trades4_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 83.42,
+                        "comp_nat_acc": 95.41,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades4_255ft__20210623_2211/Gowal2020Uncovering_28_10_extra_cifar10_trades4_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 79.86,
+                        "comp_nat_acc": 95.57,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 79.86,
+                        "comp_nat_acc": 95.14,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "autoattack": {
+            "1_255": {
+                "comp_adv_acc": 87.5,
+                "comp_nat_acc": 91.6,
+                "core_model": "./models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                "rob_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+            }
+        },
+        "pgd": {
+            "16_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__DLA_cifar10_std": {
+                    "conf0.99": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 0.06,
+                        "comp_nat_acc": 94.97,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    },
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 32.15,
+                        "comp_nat_acc": 94.98,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    }
+                }
+            },
+            "1_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__DLA_cifar10_std": {
+                    "conf0.99": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 39.76,
+                        "comp_nat_acc": 94.97,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    },
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 87.73,
+                        "comp_nat_acc": 91.35,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    }
+                }
+            },
+            "2_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__DLA_cifar10_std": {
+                    "conf0.99": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 9.51,
+                        "comp_nat_acc": 94.97,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    },
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 85.42,
+                        "comp_nat_acc": 92.39,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    }
+                }
+            },
+            "4_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__DLA_cifar10_std": {
+                    "conf0.99": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 0.46,
+                        "comp_nat_acc": 94.97,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    },
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 79.92,
+                        "comp_nat_acc": 93.72,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    }
+                }
+            },
+            "8_255": {
+                "comp_Gowal2020Uncovering_28_10_extra__DLA_cifar10_std": {
+                    "conf0.99": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 0.07,
+                        "comp_nat_acc": 94.97,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    },
+                    "rob": {
+                        "branch_model": "models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt",
+                        "comp_adv_acc": 66.01,
+                        "comp_nat_acc": 94.78,
+                        "trunk_model": "/home/ymerkli/thesis/baselines/models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt"
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 89.48,
+        "top5": 99.4
+    }
+}

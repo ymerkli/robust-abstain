@@ -1,0 +1,80 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "2_255": {
+                    "adv_acc": 53.43,
+                    "rob_inacc": 8.71,
+                    "robind_commit_prec": 85.98,
+                    "robind_commit_rate": 62.14
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "2_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                        "comp_adv_acc": 53.48,
+                        "comp_nat_acc": 78.2,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                        "comp_adv_acc": 53.48,
+                        "comp_nat_acc": 78.2,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "2_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                        "comp_adv_acc": 53.48,
+                        "comp_nat_acc": 78.2,
+                        "trunk_model": [
+                            "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255ft__20210610_2149/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades2_255.pt",
+                        "comp_adv_acc": 53.48,
+                        "comp_nat_acc": 78.2,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar100",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 66.92,
+        "top5": 87.22
+    }
+}

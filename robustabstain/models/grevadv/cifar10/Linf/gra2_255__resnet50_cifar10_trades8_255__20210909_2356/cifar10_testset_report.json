@@ -1,0 +1,42 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "2_255": {
+                    "adv_acc": 72.87,
+                    "rob_inacc": 2.86,
+                    "robind_commit_prec": 96.22,
+                    "robind_commit_rate": 75.73
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "2_255": {
+                "comp_resnet50_cifar10_trades8_255_gra2_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/resnet50_cifar10_trades8_255__20210410_2245/resnet50_cifar10_trades8_255.pt",
+                        "comp_adv_acc": 72.87,
+                        "comp_nat_acc": 96.24,
+                        "trunk_model": "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 87.86,
+        "top5": 99.46
+    }
+}

@@ -1,0 +1,278 @@
+{
+    "adv_acc": {
+        "L2": {
+            "apgd": {
+                "0.12": {
+                    "adv_acc": 86.8,
+                    "rob_inacc": 7.39,
+                    "robind_commit_prec": 92.15,
+                    "robind_commit_rate": 94.19
+                },
+                "0.25": {
+                    "adv_acc": 83.39,
+                    "rob_inacc": 4.99,
+                    "robind_commit_prec": 94.35,
+                    "robind_commit_rate": 88.38
+                },
+                "0.50": {
+                    "adv_acc": 74.13,
+                    "rob_inacc": 2.36
+                },
+                "1.00": {
+                    "adv_acc": 48.05,
+                    "rob_inacc": 0.4
+                },
+                "1.50": {
+                    "adv_acc": 20.96,
+                    "rob_inacc": 0.03
+                },
+                "2.00": {
+                    "adv_acc": 6.46,
+                    "rob_inacc": 0.01
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "L2",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "cert_acc": {
+        "0.05": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 87.4,
+                    "cert_inacc": 6.8
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.05"
+            }
+        },
+        "0.06": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 86.0,
+                    "cert_inacc": 7.6
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.06"
+            }
+        },
+        "0.1": {
+            "L2": {
+                "0.25": {
+                    "cert_acc": 73.0,
+                    "cert_inacc": 8.2
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.1"
+            }
+        },
+        "0.12": {
+            "L2": {
+                "0.25": {
+                    "cert_acc": 70.8,
+                    "cert_inacc": 11.4
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.12"
+            }
+        },
+        "0.15": {
+            "L2": {
+                "0.50": {
+                    "cert_acc": 48.2,
+                    "cert_inacc": 7.4
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.15"
+            }
+        },
+        "0.25": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 41.4,
+                    "cert_inacc": 38.2
+                },
+                "0.25": {
+                    "cert_acc": 36.6,
+                    "cert_inacc": 29.6
+                },
+                "0.50": {
+                    "cert_acc": 26.2,
+                    "cert_inacc": 17.2
+                },
+                "1.00": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                },
+                "1.50": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                },
+                "2.00": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.25"
+            }
+        },
+        "0.50": {
+            "L2": {
+                "0.50": {
+                    "cert_acc": 9.4,
+                    "cert_inacc": 20.8
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.50"
+            }
+        },
+        "1.00": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 8.2,
+                    "cert_inacc": 55.0
+                },
+                "0.25": {
+                    "cert_acc": 7.2,
+                    "cert_inacc": 44.0
+                },
+                "0.50": {
+                    "cert_acc": 4.2,
+                    "cert_inacc": 28.0
+                },
+                "1.00": {
+                    "cert_acc": 1.0,
+                    "cert_inacc": 7.0
+                },
+                "1.50": {
+                    "cert_acc": 0.4,
+                    "cert_inacc": 1.6
+                },
+                "2.00": {
+                    "cert_acc": 0.2,
+                    "cert_inacc": 0.6
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "1.00"
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "0.12": {
+                "comp_Sehwag2021Proxy_R18__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 86.8,
+                        "comp_nat_acc": 92.3,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "0.25": {
+                "comp_Sehwag2021Proxy_R18__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 83.39,
+                        "comp_nat_acc": 94.46,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "0.12": {
+                "comp_Sehwag2021Proxy_R18__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 86.8,
+                        "comp_nat_acc": 92.3,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Sehwag2021Proxy_R18__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 87.14,
+                        "comp_nat_acc": 92.17,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "0.25": {
+                "comp_Sehwag2021Proxy_R18__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 83.39,
+                        "comp_nat_acc": 94.46,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Sehwag2021Proxy_R18__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/L2/Sehwag2021Proxy_R18/Sehwag2021Proxy_R18.pt",
+                        "comp_adv_acc": 83.42,
+                        "comp_nat_acc": 94.11,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 89.52,
+        "top5": 99.62
+    }
+}

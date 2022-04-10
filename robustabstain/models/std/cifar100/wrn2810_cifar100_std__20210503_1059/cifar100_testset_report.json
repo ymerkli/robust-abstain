@@ -1,0 +1,46 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 19.9,
+                    "rob_inacc": 0.03,
+                    "robind_commit_prec": 99.85,
+                    "robind_commit_rate": 19.93
+                },
+                "2_255": {
+                    "adv_acc": 3.06,
+                    "rob_inacc": 0.01,
+                    "robind_commit_prec": 99.67,
+                    "robind_commit_rate": 3.07
+                },
+                "4_255": {
+                    "adv_acc": 0.15,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 100.0,
+                    "robind_commit_rate": 0.15
+                },
+                "8_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 0.0,
+                    "robind_commit_rate": 0.0
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar100",
+        "model": "/home/ymerkli/thesis/robust-abstain/robustabstain/models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+    },
+    "nat_acc": {
+        "top1": 80.17,
+        "top5": 94.97
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "cert_acc": {
+        "0.12": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 72.0,
+                    "cert_inacc": 3.0
+                },
+                "0.25": {
+                    "cert_acc": 53.8,
+                    "cert_inacc": 0.4
+                },
+                "0.50": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                },
+                "1.00": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                },
+                "1.50": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                },
+                "2.00": {
+                    "cert_acc": 0.0,
+                    "cert_inacc": 0.0
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.12"
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": "/home/ymerkli/thesis/robust-abstain/robustabstain/models/revcertrad/cifar10/rcr0.12__resnet110_cifar10_gaussaugm0.12__20210801_1734/resnet110_cifar10_gaussaugm0.12_rcr0.12.pt"
+    },
+    "nat_acc": {
+        "top1": 73.4,
+        "top5": 98.2
+    }
+}

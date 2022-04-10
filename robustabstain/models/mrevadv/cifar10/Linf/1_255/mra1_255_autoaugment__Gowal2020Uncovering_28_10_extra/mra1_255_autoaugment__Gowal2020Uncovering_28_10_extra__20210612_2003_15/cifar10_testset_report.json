@@ -1,0 +1,90 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 77.27,
+                    "rob_inacc": 0.2,
+                    "robind_commit_prec": 99.74,
+                    "robind_commit_rate": 77.47
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "1_255": {
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255__Gowal2020Uncovering_28_10_extra_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210612_2003_15/Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 91.55,
+                        "comp_nat_acc": 96.75,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255ft__20210524_1405/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210612_2003_15/Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 77.27,
+                        "comp_nat_acc": 98.58,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "apgd": {
+            "1_255": {
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255__Gowal2020Uncovering_28_10_extra_cifar10_trades1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210612_2003_15/Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 91.55,
+                        "comp_nat_acc": 96.75,
+                        "trunk_model": [
+                            "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255ft__20210524_1405/Gowal2020Uncovering_28_10_extra_cifar10_trades1_255.pt",
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255__aa_pyramidnet272200_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210612_2003_15/Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 77.27,
+                        "comp_nat_acc": 98.58,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/1_255/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra1_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210612_2003_15/Gowal2020Uncovering_28_10_extra_autoaugment_mra1_255.pt",
+                        "comp_adv_acc": 77.82,
+                        "comp_nat_acc": 97.88,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 95.62,
+        "top5": 99.94
+    }
+}

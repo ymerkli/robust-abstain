@@ -1,0 +1,40 @@
+{
+    "adv_acc": {
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 74.66,
+                    "rob_inacc": 0.85,
+                    "robind_commit_prec": 98.87,
+                    "robind_commit_rate": 75.50999999999999
+                },
+                "2_255": {
+                    "adv_acc": 40.71,
+                    "rob_inacc": 0.2,
+                    "robind_commit_prec": 99.51,
+                    "robind_commit_rate": 40.910000000000004
+                },
+                "4_255": {
+                    "adv_acc": 7.51,
+                    "rob_inacc": 0.01,
+                    "robind_commit_prec": 99.87,
+                    "robind_commit_rate": 7.52
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "mtsd_l",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 93.79,
+        "top5": 99.02
+    }
+}

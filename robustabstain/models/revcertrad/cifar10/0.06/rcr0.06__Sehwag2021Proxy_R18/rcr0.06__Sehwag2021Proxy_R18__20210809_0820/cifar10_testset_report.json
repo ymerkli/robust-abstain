@@ -1,0 +1,36 @@
+{
+    "cert_acc": {
+        "0.06": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 90.8,
+                    "cert_inacc": 1.6
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.06"
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "0.12": {
+                "comp_Sehwag2021Proxy_R18_rcr0.06__DLA_cifar10_std": {
+                    "cert": {
+                        "branch_model": "/home/ymerkli/thesis/robust-abstain/robustabstain/./models/revcertrad/cifar10/rcr0.06__Sehwag2021Proxy_R18__20210809_0820/Sehwag2021Proxy_R18_rcr0.06.pt",
+                        "comp_cert_acc": 90.8,
+                        "comp_nat_acc": 95.2,
+                        "trunk_model": "./models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt"
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    }
+}

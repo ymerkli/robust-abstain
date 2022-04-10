@@ -1,0 +1,36 @@
+{
+    "cert_acc": {
+        "0.06": {
+            "L2": {
+                "0.12": {
+                    "cert_acc": 71.6,
+                    "cert_inacc": 2.6
+                }
+            },
+            "info": {
+                "N": 100000,
+                "N0": 100,
+                "alpha": 0.001,
+                "sigma": "0.06"
+            }
+        }
+    },
+    "comp_acc": {
+        "": {
+            "0.12": {
+                "comp_resnet110_cifar10_gaussaugm0.12_rcr0.06__DLA_cifar10_std": {
+                    "cert": {
+                        "branch_model": "/home/ymerkli/thesis/robust-abstain/robustabstain/./models/revcertrad/cifar10/rcr0.06__resnet110_cifar10_gaussaugm0.12__20210808_2239/resnet110_cifar10_gaussaugm0.12_rcr0.06.pt",
+                        "comp_cert_acc": 71.6,
+                        "comp_nat_acc": 93.6,
+                        "trunk_model": "./models/std/cifar10/DLA_cifar10_std__20210413_1721/DLA_cifar10_std.pt"
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    }
+}

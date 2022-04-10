@@ -1,0 +1,51 @@
+import setuptools
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="robustabstain",
+    version="0.0.1",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    python_requires=">=3.8",
+    install_requires=[
+        'torch==1.7.1',
+        'torchvision==0.8.2',
+        'tensorboard',
+        'numpy',
+        'pandas==1.1.5',
+        'matplotlib==3.4.3',
+        'foolbox',
+        'robustness',
+        'tqdm',
+        'ipywidgets',
+        'plotly',
+        'tabulate',
+        'scipy',
+        'statsmodels',
+        'setGPU',
+        'sklearn',
+        'autoattack @ git+https://github.com/fra31/auto-attack.git@9b264b52bb65c373373727f532865a5551ab9c02#egg=autoattack',
+        'robustbench @ git+https://github.com/RobustBench/robustbench.git@master',
+        'efficientnet_pytorch',
+        'future',
+        'forbiddenfruit',
+        'pillow==6.2.1',
+        'six',
+        'tables',
+        'debtcollector>=1.2.0',
+        'netaddr>=0.7.18',
+        'rfc3986>=1.2.0',
+        'iso8601>=0.1.11',
+        'alive-progress',
+        'albumentations',
+        'kaleido',
+        'ray',
+        'colorama',
+        'msgpack',
+        'redis',
+        'filelock',
+        'click',
+    ]
+)

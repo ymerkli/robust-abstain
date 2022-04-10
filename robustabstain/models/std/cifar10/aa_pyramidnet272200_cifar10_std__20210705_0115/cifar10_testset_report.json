@@ -1,0 +1,62 @@
+{
+    "adv_acc": {
+        "L2": {
+            "apgd": {
+                "0.12": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": NaN,
+                    "robind_commit_rate": 0.0
+                },
+                "0.25": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": NaN,
+                    "robind_commit_rate": 0.0
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "L2",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        },
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": NaN,
+                    "robind_commit_rate": 0.0
+                },
+                "2_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": NaN,
+                    "robind_commit_rate": 0.0
+                },
+                "4_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": NaN,
+                    "robind_commit_rate": 0.0
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 98.64,
+        "top5": 99.94
+    }
+}
