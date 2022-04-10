@@ -2,18 +2,32 @@
     "adv_acc": {
         "Linf": {
             "apgd": {
+                "2_255": {
+                    "adv_acc": 77.48,
+                    "rob_inacc": 1.26,
+                    "robind_commit_prec_2x": 99.39822082679227,
+                    "robind_commit_prec_2xsepbr": 99.31972789115648,
+                    "robind_commit_rate_2x": 51.04848403900093,
+                    "robind_commit_rate_2xsepbr": 51.04848403900093
+                },
                 "4_255": {
                     "adv_acc": 50.74,
                     "rob_inacc": 0.31,
-                    "robind_commit_prec": 99.39,
-                    "robind_commit_rate": 51.050000000000004
+                    "robind_commit_prec": 99.39822082679227,
+                    "robind_commit_rate": 51.04848403900093
                 },
                 "info": {
                     "adv_attack": "apgd",
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 99.39822082679227,
+                "robind_commit_prec_2x": 99.39822082679227,
+                "robind_commit_prec_2xsepbr": 99.31972789115648,
+                "robind_commit_rate": 51.04848403900093,
+                "robind_commit_rate_2x": 51.04848403900093,
+                "robind_commit_rate_2xsepbr": 51.04848403900093
             }
         }
     },
@@ -44,6 +58,40 @@
             }
         },
         "apgd": {
+            "2_255": {
+                "comp_resnet50_mtsd_l_trades8_255_mra4_255__resnet50_mtsd_l_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/mtsd_l/Linf/4_255/mra4_255__resnet50_mtsd_l_trades8_255/mra4_255__resnet50_mtsd_l_trades8_255__20210815_1240/resnet50_mtsd_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2x": 57.01,
+                        "comp_adv_acc_2xsepbr": 56.97,
+                        "comp_nat_acc_2x": 93.95,
+                        "comp_nat_acc_2xsepbr": 93.94,
+                        "trunk_model": [
+                            "./models/std/mtsd_l/resnet50_mtsd_l_std__20210516_0140/resnet50_mtsd_l_std.pt"
+                        ]
+                    }
+                },
+                "compd_resnet50_mtsd_l_trades8_255_mra4_255__resnet50_mtsd_l_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/mtsd_l/Linf/4_255/mra4_255__resnet50_mtsd_l_trades8_255/mra4_255__resnet50_mtsd_l_trades8_255__20210815_1240/resnet50_mtsd_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2x": 57.01,
+                        "comp_nat_acc_2x": 93.95,
+                        "trunk_model": [
+                            "./models/std/mtsd_l/resnet50_mtsd_l_std__20210516_0140/resnet50_mtsd_l_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_resnet50_mtsd_l_trades8_255_mra4_255__resnet50_mtsd_l_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/mtsd_l/Linf/4_255/mra4_255__resnet50_mtsd_l_trades8_255/mra4_255__resnet50_mtsd_l_trades8_255__20210815_1240/resnet50_mtsd_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2xsepbr": 56.97,
+                        "comp_nat_acc_2xsepbr": 93.94,
+                        "trunk_model": [
+                            "./models/std/mtsd_l/resnet50_mtsd_l_std__20210516_0140/resnet50_mtsd_l_std.pt"
+                        ]
+                    }
+                }
+            },
             "4_255": {
                 "comp_resnet50_mtsd_l_trades8_255_mra4_255__resnet50_mtsd_l_std": {
                     "rob": {

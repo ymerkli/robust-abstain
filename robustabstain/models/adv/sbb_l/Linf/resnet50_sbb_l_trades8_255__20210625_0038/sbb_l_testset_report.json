@@ -131,6 +131,26 @@
                             "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
                         ]
                     }
+                },
+                "compd_resnet50_sbb_l_trades8_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades8_255__20210625_0038/resnet50_sbb_l_trades8_255.pt",
+                        "comp_adv_acc": 85.58,
+                        "comp_nat_acc": 86.83,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_resnet50_sbb_l_trades8_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades8_255__20210625_0038/resnet50_sbb_l_trades8_255.pt",
+                        "comp_adv_acc": 87.97,
+                        "comp_nat_acc": 91.11,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
                 }
             },
             "2_255": {
@@ -150,6 +170,26 @@
                         "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades8_255__20210625_0038/resnet50_sbb_l_trades8_255.pt",
                         "comp_adv_acc": 84.41,
                         "comp_nat_acc": 86.83,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                },
+                "compd_resnet50_sbb_l_trades8_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades8_255__20210625_0038/resnet50_sbb_l_trades8_255.pt",
+                        "comp_adv_acc": 82.87,
+                        "comp_nat_acc": 87.68,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_resnet50_sbb_l_trades8_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades8_255__20210625_0038/resnet50_sbb_l_trades8_255.pt",
+                        "comp_adv_acc": 83.43,
+                        "comp_nat_acc": 90.36,
                         "trunk_model": [
                             "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
                         ]

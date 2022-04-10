@@ -8,13 +8,17 @@
                 },
                 "1_255": {
                     "adv_acc": 88.85,
-                    "rob_inacc": 7.71
+                    "rob_inacc": 7.71,
+                    "robind_commit_prec_2x": 93.0143206426825,
+                    "robind_commit_prec_2xsepbr": 92.66503667481663,
+                    "robind_commit_rate_2x": 93.59267734553775,
+                    "robind_commit_rate_2xsepbr": 93.59267734553775
                 },
                 "2_255": {
                     "adv_acc": 87.05,
                     "rob_inacc": 6.54,
-                    "robind_commit_prec": 93.01,
-                    "robind_commit_rate": 93.59
+                    "robind_commit_prec": 93.0143206426825,
+                    "robind_commit_rate": 93.59267734553775
                 },
                 "4_255": {
                     "adv_acc": 83.23,
@@ -60,6 +64,20 @@
             }
         },
         "apgd": {
+            "1_255": {
+                "comp_resnet50_sbb_l_stdaug_trades2_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "./models/adv/sbb_l/Linf/resnet50_sbb_l_stdaug_trades2_255ft__20210628_0228/resnet50_sbb_l_stdaug_trades2_255.pt",
+                        "comp_adv_acc_2x": 89.83,
+                        "comp_adv_acc_2xsepbr": 89.51,
+                        "comp_nat_acc_2x": 91.73,
+                        "comp_nat_acc_2xsepbr": 91.86,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                }
+            },
             "2_255": {
                 "comp_resnet50_sbb_l_stdaug_trades2_255__resnet50_sbb_l_trades2_255__resnet50_sbb_l_wstd": {
                     "rob": {

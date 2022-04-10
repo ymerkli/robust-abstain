@@ -2,10 +2,18 @@
     "adv_acc": {
         "Linf": {
             "apgd": {
+                "2_255": {
+                    "adv_acc": 51.31,
+                    "rob_inacc": 3.85,
+                    "robind_commit_prec_2x": 97.90034471952367,
+                    "robind_commit_prec_2xsepbr": 93.5756816045127,
+                    "robind_commit_rate_2x": 31.91,
+                    "robind_commit_rate_2xsepbr": 31.91
+                },
                 "4_255": {
                     "adv_acc": 31.24,
                     "rob_inacc": 0.67,
-                    "robind_commit_prec": 97.9,
+                    "robind_commit_prec": 97.90034471952367,
                     "robind_commit_rate": 31.91
                 },
                 "info": {
@@ -13,7 +21,13 @@
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 97.90034471952367,
+                "robind_commit_prec_2x": 97.90034471952367,
+                "robind_commit_prec_2xsepbr": 93.5756816045127,
+                "robind_commit_rate": 31.91,
+                "robind_commit_rate_2x": 31.91,
+                "robind_commit_rate_2xsepbr": 31.91
             }
         }
     },
@@ -44,12 +58,46 @@
             }
         },
         "apgd": {
+            "2_255": {
+                "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/4_255/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210703_1734/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255.pt",
+                        "comp_adv_acc_2x": 31.4,
+                        "comp_adv_acc_2xsepbr": 30.02,
+                        "comp_nat_acc_2x": 80.46,
+                        "comp_nat_acc_2xsepbr": 80.35,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "compd_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/4_255/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210703_1734/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255.pt",
+                        "comp_adv_acc_2x": 31.4,
+                        "comp_nat_acc_2x": 80.46,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255__wrn2810_cifar100_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar100/Linf/4_255/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210703_1734/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255.pt",
+                        "comp_adv_acc_2xsepbr": 30.02,
+                        "comp_nat_acc_2xsepbr": 80.35,
+                        "trunk_model": [
+                            "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"
+                        ]
+                    }
+                }
+            },
             "4_255": {
                 "comp_Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255__Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades4_255__wrn2810_cifar100_std": {
                     "rob": {
                         "branch_model": "models/mrevadv/cifar100/Linf/4_255/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm/mra4_255_autoaugment__Rebuffi2021Fixing_28_10_cutmix_ddpm__20210703_1734/Rebuffi2021Fixing_28_10_cutmix_ddpm_autoaugment_mra4_255.pt",
-                        "comp_adv_acc": 45.33,
-                        "comp_nat_acc": 79.43,
+                        "comp_adv_acc": 44.72,
+                        "comp_nat_acc": 78.82,
                         "trunk_model": [
                             "./models/adv/cifar100/Linf/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades4_255ft__20210705_2313/Rebuffi2021Fixing_28_10_cutmix_ddpm_cifar100_trades4_255.pt",
                             "./models/std/cifar100/wrn2810_cifar100_std__20210503_1059/wrn2810_cifar100_std.pt"

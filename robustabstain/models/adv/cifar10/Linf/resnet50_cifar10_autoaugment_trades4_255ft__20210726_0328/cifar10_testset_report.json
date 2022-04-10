@@ -2,10 +2,18 @@
     "adv_acc": {
         "Linf": {
             "apgd": {
+                "2_255": {
+                    "adv_acc": 76.71,
+                    "rob_inacc": 7.62,
+                    "robind_commit_prec_2x": 95.29078014184395,
+                    "robind_commit_prec_2xsepbr": 95.37588652482269,
+                    "robind_commit_rate_2x": 70.5,
+                    "robind_commit_rate_2xsepbr": 70.5
+                },
                 "4_255": {
-                    "adv_acc": 67.59,
-                    "rob_inacc": 2.91,
-                    "robind_commit_prec": 95.87,
+                    "adv_acc": 67.51,
+                    "rob_inacc": 2.99,
+                    "robind_commit_prec": 95.75886524822695,
                     "robind_commit_rate": 70.5
                 },
                 "info": {
@@ -13,7 +21,13 @@
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 95.75886524822695,
+                "robind_commit_prec_2x": 95.29078014184395,
+                "robind_commit_prec_2xsepbr": 95.37588652482269,
+                "robind_commit_rate": 70.5,
+                "robind_commit_rate_2x": 70.5,
+                "robind_commit_rate_2xsepbr": 70.5
             }
         }
     },
@@ -44,6 +58,40 @@
             }
         },
         "apgd": {
+            "2_255": {
+                "comp_cifar_resnet50_cifar10_autoaugment_trades4_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/resnet50_cifar10_autoaugment_trades4_255ft__20210726_0328/cifar_resnet50_cifar10_autoaugment_trades4_255.pt",
+                        "comp_adv_acc_2x": 67.31,
+                        "comp_adv_acc_2xsepbr": 67.37,
+                        "comp_nat_acc_2x": 95.51,
+                        "comp_nat_acc_2xsepbr": 95.62,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compd_cifar_resnet50_cifar10_autoaugment_trades4_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/resnet50_cifar10_autoaugment_trades4_255ft__20210726_0328/cifar_resnet50_cifar10_autoaugment_trades4_255.pt",
+                        "comp_adv_acc_2x": 67.31,
+                        "comp_nat_acc_2x": 95.51,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_cifar_resnet50_cifar10_autoaugment_trades4_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/resnet50_cifar10_autoaugment_trades4_255ft__20210726_0328/cifar_resnet50_cifar10_autoaugment_trades4_255.pt",
+                        "comp_adv_acc_2xsepbr": 67.37,
+                        "comp_nat_acc_2xsepbr": 95.62,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
             "4_255": {
                 "comp_cifar_resnet50_cifar10_autoaugment_trades4_255__aa_pyramidnet272200_cifar10_std": {
                     "rob": {
@@ -69,8 +117,8 @@
                 "comp_cifar_resnet50_cifar10_autoaugment_trades4_255__wrn4010_cifar10_std": {
                     "rob": {
                         "branch_model": "./models/adv/cifar10/Linf/resnet50_cifar10_autoaugment_trades4_255ft__20210726_0328/cifar_resnet50_cifar10_autoaugment_trades4_255.pt",
-                        "comp_adv_acc": 67.59,
-                        "comp_nat_acc": 95.59,
+                        "comp_adv_acc": 67.51,
+                        "comp_nat_acc": 95.51,
                         "trunk_model": [
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]

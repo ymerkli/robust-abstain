@@ -5,15 +5,17 @@
                 "1_255": {
                     "adv_acc": 79.34,
                     "rob_inacc": 1.83,
-                    "robind_commit_prec": 97.75,
-                    "robind_commit_rate": 81.17
+                    "robind_commit_prec": 97.74466371325012,
+                    "robind_commit_rate": 81.17031709709055
                 },
                 "info": {
                     "adv_attack": "apgd",
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 97.74466371325012,
+                "robind_commit_rate": 81.17031709709055
             }
         }
     },

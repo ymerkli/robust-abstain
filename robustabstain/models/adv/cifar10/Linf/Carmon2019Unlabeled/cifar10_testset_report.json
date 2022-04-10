@@ -277,6 +277,26 @@
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]
                     }
+                },
+                "compd_Carmon2019Unlabeled__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
+                        "comp_adv_acc": 85.18,
+                        "comp_nat_acc": 93.53,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_Carmon2019Unlabeled__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
+                        "comp_adv_acc": 84.74,
+                        "comp_nat_acc": 95.04,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
                 }
             },
             "2_255": {
@@ -310,6 +330,26 @@
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]
                     }
+                },
+                "compd_Carmon2019Unlabeled__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
+                        "comp_adv_acc": 78.79,
+                        "comp_nat_acc": 95.67,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_Carmon2019Unlabeled__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
+                        "comp_adv_acc": 78.03,
+                        "comp_nat_acc": 96.17,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
                 }
             },
             "4_255": {
@@ -339,6 +379,16 @@
                         "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
                         "comp_adv_acc": 78.75,
                         "comp_nat_acc": 95.67,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compd_Carmon2019Unlabeled__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Carmon2019Unlabeled/Carmon2019Unlabeled.pt",
+                        "comp_adv_acc": 61.87,
+                        "comp_nat_acc": 97.38,
                         "trunk_model": [
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]

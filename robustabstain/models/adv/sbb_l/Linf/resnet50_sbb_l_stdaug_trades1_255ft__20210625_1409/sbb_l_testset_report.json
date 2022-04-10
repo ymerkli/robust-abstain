@@ -9,8 +9,8 @@
                 "1_255": {
                     "adv_acc": 89.44,
                     "rob_inacc": 6.8,
-                    "robind_commit_prec": 92.93,
-                    "robind_commit_rate": 96.24
+                    "robind_commit_prec": 92.93478260869567,
+                    "robind_commit_rate": 96.2406015037594
                 },
                 "2_255": {
                     "adv_acc": 87.38,
@@ -29,7 +29,9 @@
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 92.93478260869567,
+                "robind_commit_rate": 96.2406015037594
             }
         }
     },

@@ -5,7 +5,7 @@
                 "0.12": {
                     "adv_acc": 88.52,
                     "rob_inacc": 4.64,
-                    "robind_commit_prec": 95.02,
+                    "robind_commit_prec": 95.01932159725203,
                     "robind_commit_rate": 93.16
                 },
                 "info": {
@@ -13,7 +13,9 @@
                     "adv_norm": "L2",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 95.01932159725203,
+                "robind_commit_rate": 93.16
             }
         }
     },

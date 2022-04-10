@@ -2,18 +2,32 @@
     "adv_acc": {
         "Linf": {
             "apgd": {
+                "2_255": {
+                    "adv_acc": 86.69,
+                    "rob_inacc": 6.6,
+                    "robind_commit_prec_2x": 92.56630556593201,
+                    "robind_commit_prec_2xsepbr": 95.06910720956294,
+                    "robind_commit_rate_2x": 87.51225890813991,
+                    "robind_commit_rate_2xsepbr": 87.51225890813991
+                },
                 "4_255": {
-                    "adv_acc": 83.49,
-                    "rob_inacc": 4.02,
-                    "robind_commit_prec": 95.41,
-                    "robind_commit_rate": 87.50999999999999
+                    "adv_acc": 82.05,
+                    "rob_inacc": 5.46,
+                    "robind_commit_prec": 93.76167351512888,
+                    "robind_commit_rate": 87.51225890813991
                 },
                 "info": {
                     "adv_attack": "apgd",
                     "adv_norm": "Linf",
                     "test_att_n_steps": 40,
                     "test_att_step_size": 0.1
-                }
+                },
+                "robind_commit_prec": 93.76167351512888,
+                "robind_commit_prec_2x": 92.56630556593201,
+                "robind_commit_prec_2xsepbr": 95.06910720956294,
+                "robind_commit_rate": 87.51225890813991,
+                "robind_commit_rate_2x": 87.51225890813991,
+                "robind_commit_rate_2xsepbr": 87.51225890813991
             }
         }
     },
@@ -44,12 +58,46 @@
             }
         },
         "apgd": {
+            "2_255": {
+                "comp_resnet50_sbb_l_trades8_255_mra4_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/sbb_l/Linf/4_255/mra4_255__resnet50_sbb_l_trades8_255/mra4_255__resnet50_sbb_l_trades8_255__20210710_0056/resnet50_sbb_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2x": 82.77,
+                        "comp_adv_acc_2xsepbr": 84.96,
+                        "comp_nat_acc_2x": 91.21,
+                        "comp_nat_acc_2xsepbr": 92.55,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                },
+                "compd_resnet50_sbb_l_trades8_255_mra4_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/sbb_l/Linf/4_255/mra4_255__resnet50_sbb_l_trades8_255/mra4_255__resnet50_sbb_l_trades8_255__20210710_0056/resnet50_sbb_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2x": 82.77,
+                        "comp_nat_acc_2x": 91.21,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_resnet50_sbb_l_trades8_255_mra4_255__resnet50_sbb_l_wstd": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/sbb_l/Linf/4_255/mra4_255__resnet50_sbb_l_trades8_255/mra4_255__resnet50_sbb_l_trades8_255__20210710_0056/resnet50_sbb_l_trades8_255_mra4_255.pt",
+                        "comp_adv_acc_2xsepbr": 84.96,
+                        "comp_nat_acc_2xsepbr": 92.55,
+                        "trunk_model": [
+                            "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
+                        ]
+                    }
+                }
+            },
             "4_255": {
                 "comp_resnet50_sbb_l_trades8_255_mra4_255__resnet50_sbb_l_trades4_255__resnet50_sbb_l_wstd": {
                     "rob": {
                         "branch_model": "models/mrevadv/sbb_l/Linf/4_255/mra4_255__resnet50_sbb_l_trades8_255/mra4_255__resnet50_sbb_l_trades8_255__20210710_0056/resnet50_sbb_l_trades8_255_mra4_255.pt",
-                        "comp_adv_acc": 85.85,
-                        "comp_nat_acc": 91.01,
+                        "comp_adv_acc": 84.41,
+                        "comp_nat_acc": 89.57,
                         "trunk_model": [
                             "./models/adv/sbb_l/Linf/resnet50_sbb_l_trades4_255ft__20210710_0058/resnet50_sbb_l_trades4_255.pt",
                             "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
@@ -59,8 +107,8 @@
                 "comp_resnet50_sbb_l_trades8_255_mra4_255__resnet50_sbb_l_wstd": {
                     "rob": {
                         "branch_model": "models/mrevadv/sbb_l/Linf/4_255/mra4_255__resnet50_sbb_l_trades8_255/mra4_255__resnet50_sbb_l_trades8_255__20210710_0056/resnet50_sbb_l_trades8_255_mra4_255.pt",
-                        "comp_adv_acc": 83.65,
-                        "comp_nat_acc": 92.64,
+                        "comp_adv_acc": 82.22,
+                        "comp_nat_acc": 91.21,
                         "trunk_model": [
                             "./models/std/sbb_l/resnet50_sbb_l_wstd__20210810_0037/resnet50_sbb_l_wstd.pt"
                         ]
@@ -76,5 +124,42 @@
     "nat_acc": {
         "top1": 90.29,
         "top5": 100.0
+    },
+    "per_class": {
+        "adv_acc": {
+            "Linf": {
+                "apgd": {
+                    "2_255": {
+                        "joint": {
+                            "adv_acc": 87.5,
+                            "rob_inacc": 8.65
+                        },
+                        "nodefect": {
+                            "adv_acc": 92.09,
+                            "rob_inacc": 3.62
+                        },
+                        "squat": {
+                            "adv_acc": 15.67,
+                            "rob_inacc": 52.24
+                        },
+                        "surface_defect": {
+                            "adv_acc": 88.81,
+                            "rob_inacc": 4.59
+                        },
+                        "welding": {
+                            "adv_acc": 85.19,
+                            "rob_inacc": 7.04
+                        }
+                    }
+                }
+            }
+        },
+        "nat_acc": {
+            "joint": 89.42,
+            "nodefect": 94.46,
+            "squat": 29.85,
+            "surface_defect": 92.49,
+            "welding": 90.0
+        }
     }
 }

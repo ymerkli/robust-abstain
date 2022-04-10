@@ -269,6 +269,26 @@
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]
                     }
+                },
+                "compd_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 85.7,
+                        "comp_nat_acc": 93.09,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 85.46,
+                        "comp_nat_acc": 95.44,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
                 }
             },
             "2_255": {
@@ -302,6 +322,26 @@
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]
                     }
+                },
+                "compd_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 79.89,
+                        "comp_nat_acc": 95.14,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compdsepbr_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 77.94,
+                        "comp_nat_acc": 95.89,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
                 }
             },
             "4_255": {
@@ -331,6 +371,16 @@
                         "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
                         "comp_adv_acc": 79.86,
                         "comp_nat_acc": 95.14,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "compd_Gowal2020Uncovering_28_10_extra__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "./models/adv/cifar10/Linf/Gowal2020Uncovering_28_10_extra/Gowal2020Uncovering_28_10_extra.pt",
+                        "comp_adv_acc": 65.7,
+                        "comp_nat_acc": 97.05,
                         "trunk_model": [
                             "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
                         ]

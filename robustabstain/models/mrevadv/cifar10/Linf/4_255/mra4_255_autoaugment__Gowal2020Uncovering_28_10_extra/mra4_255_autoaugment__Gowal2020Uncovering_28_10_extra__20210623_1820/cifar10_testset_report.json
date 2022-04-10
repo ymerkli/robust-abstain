@@ -2,10 +2,18 @@
     "adv_acc": {
         "Linf": {
             "apgd": {
+                "2_255": {
+                    "adv_acc": 89.16,
+                    "rob_inacc": 1.08,
+                    "robind_commit_prec_2x": 99.60504522869155,
+                    "robind_commit_prec_2xsepbr": 98.61128806217351,
+                    "robind_commit_rate_2x": 78.49000000000001,
+                    "robind_commit_rate_2xsepbr": 78.49000000000001
+                },
                 "4_255": {
                     "adv_acc": 78.18,
                     "rob_inacc": 0.31,
-                    "robind_commit_prec": 99.61,
+                    "robind_commit_prec": 99.60504522869155,
                     "robind_commit_rate": 78.49000000000001
                 },
                 "info": {
@@ -44,6 +52,20 @@
             }
         },
         "apgd": {
+            "2_255": {
+                "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra4_255__wrn4010_cifar10_std": {
+                    "rob": {
+                        "branch_model": "models/mrevadv/cifar10/Linf/4_255/mra4_255_autoaugment__Gowal2020Uncovering_28_10_extra/mra4_255_autoaugment__Gowal2020Uncovering_28_10_extra__20210623_1820/Gowal2020Uncovering_28_10_extra_autoaugment_mra4_255.pt",
+                        "comp_adv_acc_2x": 78.21,
+                        "comp_adv_acc_2xsepbr": 77.43,
+                        "comp_nat_acc_2x": 97.9,
+                        "comp_nat_acc_2xsepbr": 97.8,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
             "4_255": {
                 "comp_Gowal2020Uncovering_28_10_extra_autoaugment_mra4_255__Gowal2020Uncovering_28_10_extra_cifar10_trades4_255__aa_pyramidnet272200_cifar10_std": {
                     "rob": {
