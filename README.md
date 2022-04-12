@@ -1,6 +1,6 @@
 # robust-abstain
 
-This it the official codebase for the paper `Just Avoid Robust Inaccuracy: Boosting Robustness Without Sacrificing Accuracy`.
+This is the official codebase for the paper `Just Avoid Robust Inaccuracy: Boosting Robustness Without Sacrificing Accuracy`.
 
 **Table of Contents**<br>
 1.  [Project Structure](#project-structure) <br>
