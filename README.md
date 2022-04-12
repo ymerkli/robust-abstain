@@ -119,7 +119,7 @@ We provided evaluation logs for each model, indicate robustness, accuracy, predi
 These evaluation logs allow us to run the plotting scripts without actually having access to pretrained weights.
 
 NOTE: the model directories containing model logs also contain a dummy weight file `*.pt`.
-This file can be ignored, and must be replaced by a concrete weight file, if a model should be evaluated from scratch instead of from model logs.
+These files can be ignored, and must be replaced by a concrete weight file, if a model should be evaluated from scratch instead of from model logs.
 
 ### Base Models
 
