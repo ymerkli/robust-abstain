@@ -103,7 +103,7 @@ The models in our work are located in:
 
 ```
 models
-├── ace                         # ACE models (Mueller et. al.)
+├── ace                         # ACE models (Mueller et al.)
 ├── adv                         # adversarially trained models
 ├── augm                        # models trained via Gaussian noise augmentations
 ├── get_models.sh               # script to download models from RobustBench
@@ -133,6 +133,21 @@ bash models/get_models.sh
 
 ### Pretrained models
 
+During our experiments, we trained a large amount of models with different hyperparameters. Naturally, we cannot release all of them.
+However, we do release a small subset of models trained with our proposed loss $L_{ERA}$ on the CIFAR-10 dataset, which allows to verify our results.
+Concretly, we release the following models:
+
+- TRADES [3] trained ResNet50 base model (pretrained for $\epsilon_\infty = 8/255$), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
+- Carmon et al. [1] WideResNet-28-10 base model (pretrained for $\epsilon_\infty = 8/255$, taken from [RobustBench](https://github.com/RobustBench/robustbench)), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
+- Gowal et al. [1] WideResNet-28-10 base model (pretrained for $\epsilon_\infty = 8/255$, taken from [RobustBench](https://github.com/RobustBench/robustbench)), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
+
+Additionally, we also release the CIFAR-10 standard trained WideResNet-40-10 model, which we used for our evaluations of compositional architectures.
+The standard trained model was taken from Zhao et al. [6], using the [provided checkpoint](https://github.com/mzhaoshuai/Divide-and-Co-training/blob/main/miscs/checkpoints.md).
+
+
+The models can be downloaded [using this link](https://drive.google.com/drive/folders/1zn7sy3_KmMObosdLakjwCvpuXHyAENNC?usp=sharing).
+The directory structure of the provided zip file follows the structure of the `models/` directory, thus the pretrained models can simply be copied to the respective model directories.
+
 
 ## Evaluation
 
@@ -141,7 +156,7 @@ Consider the evaluation scripts in `robust-abstain/robustabstain/scripts/eval` a
 For each evaluation run, a report file and a log file are written to the directory of the exported model that is being evaluated.
 Running these evaluations requires exported models, however, we provide model log files that log all evaluations.
 
-As an example, run the following command to evaluate the natural accuracy and adversarial accuracy for $l_{\infty}$ perturbations of radius 1/255, 2/255, 4/255. 8/255, 16/255, using APGD [2], for the CIFAR-10 model by Carmon et. al. [1]:
+As an example, run the following command to evaluate the natural accuracy and adversarial accuracy for $l_{\infty}$ perturbations of radius 1/255, 2/255, 4/255. 8/255, 16/255, using APGD [2], for the CIFAR-10 model by Carmon et al. [1]:
 
 ```bash
 cd robustabstain
@@ -160,7 +175,7 @@ python3 eval/run_solo.py \
 
 Consider the plotting scripts in `robust-abstain/robustabstain/scripts/plot` and the README file `robust-abstain/robustabstain/scripts/README.md`.
 
-In the following, we provide sample commands to recreate the plots from the paper, for the empirically robust Gowal et. al. [4] base model.
+In the following, we provide sample commands to recreate the plots from the paper, for the empirically robust Gowal et al. [4] base model.
 The commands evaluate robustness to the perturbation region $\epsilon_{\infty} = 1/255$ using APGD.
 The plots include the results from the trained empirical robustness indicator abstain models and the comparison to softmax response (SR) and selection network ACE [5].
 
@@ -244,7 +259,7 @@ python3 analysis/plotting/plot_revadv.py \
 
 Training code is located in `robust-abstain/robustabstain/train/` and corresponding training scripts in `robust-abstain/robustabstain/scripts/train`.
 
-As an example, training the base model by Carmon et. al. [1] (taken from [RobustBench](https://github.com/RobustBench/robustbench)) using our proposed empirical robustness abstain loss $L_{ERA}$ on CIFAR-10 for $\epsilon_{\infty} = 2/255$ perturbations is done as follows:
+As an example, training the base model by Carmon et al. [1] (taken from [RobustBench](https://github.com/RobustBench/robustbench)) using our proposed empirical robustness abstain loss $L_{ERA}$ on CIFAR-10 for $\epsilon_{\infty} = 2/255$ perturbations is done as follows:
 
 ```bash
 cd robustabstain
@@ -281,3 +296,5 @@ python3 train/train_revadv.py \
 [4] Gowal, Sven, et al. "Uncovering the limits of adversarial training against norm-bounded adversarial examples." arXiv preprint arXiv:2010.03593 (2020).Gowal S, Qin C, Uesato J, Mann T, Kohli P. Uncovering the limits of adversarial training against norm-bounded adversarial examples. arXiv preprint arXiv:2010.03593. 2020 Oct 7.
 
 [5] Mueller MN, Balunović M, Vechev M. Certify or predict: Boosting certified robustness with compositional architectures. InInternational Conference on Learning Representations (ICLR 2021) 2021 May 3. OpenReview.
+
+[6] Zhao S, Zhou L, Wang W, Cai D, Lam TL, Xu Y. Towards better accuracy-efficiency trade-offs: Divide and co-training. arXiv preprint arXiv:2011.14660. 2020 Nov 30.
