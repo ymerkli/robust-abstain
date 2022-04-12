@@ -1,0 +1,86 @@
+{
+    "comp_acc": {
+        "": {
+            "1_255": {
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__aa_pyramidnet272200_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 21.65,
+                        "comp_cert_acc": 16.13,
+                        "comp_nat_acc": 95.29,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "2_255": {
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__aa_pyramidnet272200_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 20.85,
+                        "comp_cert_acc": 15.47,
+                        "comp_nat_acc": 95.29,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        },
+        "cert": {
+            "1_255": {
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__aa_pyramidnet272200_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 21.65,
+                        "comp_cert_acc": 16.13,
+                        "comp_nat_acc": 95.29,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__wrn4010_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 37.84,
+                        "comp_cert_acc": 34.78,
+                        "comp_nat_acc": 94.45,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            },
+            "2_255": {
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__aa_pyramidnet272200_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 20.85,
+                        "comp_cert_acc": 15.47,
+                        "comp_nat_acc": 95.29,
+                        "trunk_model": [
+                            "./models/std/cifar10/aa_pyramidnet272200_cifar10_std__20210705_0115/aa_pyramidnet272200_cifar10_std.pt"
+                        ]
+                    }
+                },
+                "comp_C3_ACE_Net_IBP_cert_cifar10_2_255__wrn4010_cifar10_std": {
+                    "selnet": {
+                        "branch_model": "./models/ace/cifar10/Linf/ACE_Net_IBP_cert_2_255/C3_ACE_Net_IBP_cert_cifar10_2_255.pt",
+                        "comp_adv_acc": 22.19,
+                        "comp_cert_acc": 17.13,
+                        "comp_nat_acc": 94.45,
+                        "trunk_model": [
+                            "./models/std/cifar10/wrn4010_cifar10_std__20210919_2248/wrn4010_cifar10_std.pt"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    }
+}

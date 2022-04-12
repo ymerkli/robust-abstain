@@ -1,0 +1,68 @@
+{
+    "adv_acc": {
+        "L2": {
+            "apgd": {
+                "0.12": {
+                    "adv_acc": 33.26,
+                    "rob_inacc": 0.02,
+                    "robind_commit_prec": 99.94,
+                    "robind_commit_rate": 33.28
+                },
+                "0.25": {
+                    "adv_acc": 3.74,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 100.0,
+                    "robind_commit_rate": 3.74
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "L2",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        },
+        "Linf": {
+            "apgd": {
+                "1_255": {
+                    "adv_acc": 26.18,
+                    "rob_inacc": 0.01,
+                    "robind_commit_prec": 99.96,
+                    "robind_commit_rate": 26.19
+                },
+                "2_255": {
+                    "adv_acc": 2.92,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 100.0,
+                    "robind_commit_rate": 2.92
+                },
+                "4_255": {
+                    "adv_acc": 0.06,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 100.0,
+                    "robind_commit_rate": 0.06
+                },
+                "8_255": {
+                    "adv_acc": 0.0,
+                    "rob_inacc": 0.0,
+                    "robind_commit_prec": 0.0,
+                    "robind_commit_rate": 0.0
+                },
+                "info": {
+                    "adv_attack": "apgd",
+                    "adv_norm": "Linf",
+                    "test_att_n_steps": 40,
+                    "test_att_step_size": 0.1
+                }
+            }
+        }
+    },
+    "info": {
+        "dataset": "cifar10",
+        "model": ""
+    },
+    "nat_acc": {
+        "top1": 97.81,
+        "top5": 99.93
+    }
+}
