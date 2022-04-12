@@ -345,7 +345,7 @@ def plot(
 
     # extract branchpred model paths
     branchpred_path_noaug, branchpred_path_aug = None, None
-    if args.eval_2xeps:
+    if args.eval_2xeps and sep_branchpred:
         assert len(args.branch_models_predict) == 2
         branchpred_path_aug = [p for p in args.branch_models_predict if any(aug in p for aug in DATA_AUG)]
         assert len(branchpred_path_aug) == 1, 'Error: exactly one branchpred model trained with data augmentations must be present.'
@@ -692,7 +692,7 @@ def plot(
             if not branch_is_abstain_trained:
                 assert len(branch_model_paths) == 1, 'Error: confidence thresholding abstain only supported for a single model.'
                 model_path_ft = None
-                if args.eval_2xeps:
+                if args.eval_2xeps and sep_branchpred:
                     if not branch_is_baseline and not data_aug:
                         model_path_ft =  branchpred_path_noaug
                     elif not branch_is_baseline and data_aug:
@@ -926,8 +926,6 @@ def main():
 
     plot(args, test_loader, device, annotate_ts=False, sep_branchpred=False)
     plot(args, test_loader, device, annotate_ts=True, sep_branchpred=False)
-    plot(args, test_loader, device, annotate_ts=False, sep_branchpred=True)
-    plot(args, test_loader, device, annotate_ts=True, sep_branchpred=True)
 
 
 if __name__ == '__main__':

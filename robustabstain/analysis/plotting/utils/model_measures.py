@@ -72,12 +72,12 @@ def conf_model_measures(
     branch_model = None
     model_name = os.path.splitext(os.path.basename(model_path))[0]
     model_dir = os.path.dirname(model_path)
-    if os.path.isfile(model_path):
+    if os.path.isfile(model_path) and os.path.getsize(model_path) > 0:
         branch_model, _, _ = load_checkpoint(
             model_path, net=None, arch=None, dataset=args.dataset, device=device,
             normalize=not args.no_normalize, optimizer=None, parallel=True
         )
-    
+
     evalabst_eps = test_eps
     if eval_2xeps:
         # for compositional eval, abstain branch must be evaluated at double the perturbation region
@@ -239,7 +239,7 @@ def adv_robind_model_measures(
             model_ts[j] = model_dir
 
         branch_model = None
-        if os.path.isfile(model_path):
+        if os.path.isfile(model_path) and os.path.getsize(model_path) > 0:
             branch_model, _, _ = load_checkpoint(
                 model_path, net=None, arch=None, dataset=args.dataset, device=device,
                 normalize=not args.no_normalize, optimizer=None, parallel=True
@@ -393,7 +393,7 @@ def ace_model_measures(
 
         # build ACE model
         dTNet = None
-        if os.path.isfile(model_path):
+        if os.path.isfile(model_path) and os.path.getsize(model_path) > 0:
             dTNet = build_ace_net(args, model_path, device)
 
         # eval ACE model

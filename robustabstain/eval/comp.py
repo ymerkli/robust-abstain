@@ -153,11 +153,13 @@ def get_comp_indicator(
         # Subset dataset have random index order
         dataset_indices = dataloader.dataset.indices
 
-    # load branch model
-    branch_model, _, _ = load_checkpoint(
-        branch_model_path, net=None, arch=None, dataset=args.dataset, device=device,
-        normalize=not args.no_normalize, optimizer=None, parallel=True
-    )
+    # load branch model. If model logs exists, exported model weights are not required.
+    branch_model = None
+    if os.path.exists(branch_model_path) and os.path.getsize(branch_model_path) > 0:
+        branch_model, _, _ = load_checkpoint(
+            branch_model_path, net=None, arch=None, dataset=args.dataset, device=device,
+            normalize=not args.no_normalize, optimizer=None, parallel=True
+        )
     branch_model_dir = os.path.dirname(branch_model_path)
     branch_model_name = os.path.splitext(os.path.basename(branch_model_path))[0]
 
