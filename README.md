@@ -139,7 +139,7 @@ Concretly, we release the following models:
 
 - TRADES [3] trained ResNet50 base model (pretrained for $\epsilon_\infty = 8/255$), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
 - Carmon et al. [1] WideResNet-28-10 base model (pretrained for $\epsilon_\infty = 8/255$, taken from [RobustBench](https://github.com/RobustBench/robustbench)), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
-- Gowal et al. [1] WideResNet-28-10 base model (pretrained for $\epsilon_\infty = 8/255$, taken from [RobustBench](https://github.com/RobustBench/robustbench)), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
+- Gowal et al. [4] WideResNet-28-10 base model (pretrained for $\epsilon_\infty = 8/255$, taken from [RobustBench](https://github.com/RobustBench/robustbench)), which was finetuned for $\epsilon_\infty = 2/255$ perturbations using our proposed $L_{ERA}$ loss.
 
 Additionally, we also release the CIFAR-10 standard trained WideResNet-40-10 model, which we used for our evaluations of compositional architectures.
 The standard trained model was taken from Zhao et al. [6], using the [provided checkpoint](https://github.com/mzhaoshuai/Divide-and-Co-training/blob/main/miscs/checkpoints.md).
